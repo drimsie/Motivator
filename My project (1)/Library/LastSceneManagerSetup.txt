@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Dima.unity
+- path: Assets/Scenes/Renat.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
