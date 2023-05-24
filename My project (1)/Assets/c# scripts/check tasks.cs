@@ -4,20 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class checktasks : MonoBehaviour
+{
+    public static string myName;
+    private Text myText;
+    void Start ()
     {
-    public InputField inputField;   // ссылка на InputField
-
-    private string collectedText;   // переменная для хранения введенного текста
-
-    void Start()
-    {
-        collectedText = "";         // инициализация переменной
+        myText = GetComponent <Text> ();
     }
-
-    public void CollectInput()
+    void Update ()
     {
-        collectedText = inputField.text;   // сбор введенного текста
-        Debug.Log("Collected text: " + collectedText);  // вывод в консоль для проверки
+        myName = myText.text.ToString ();
     }
-
 }
